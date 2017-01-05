@@ -10,6 +10,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "emojilib": "^2.0.3",
     "fs": "0.0.1-security",
     "sentencer": "^0.1.5",
     "vue": "^2.1.0"
