@@ -2,7 +2,7 @@
   <ul class="randomized-list">
     <li class="randomized-item"> {{ noun }} </li>
     <li class="randomized-item"> {{ emoji }} </li>
-    <li class="randomized-item challenge-item"> with {{ challenge }} </li>
+    <li class="randomized-item"> <small>with</small> <span class="challenge-item">{{ challenge }} </span> </li>
   </ul>
 </template>
 
@@ -10,9 +10,10 @@
 const Sentencer = require('sentencer');
 const emojiList = require('emojilib/emojis.json');
 
+// get random emoji from EmojiLib json except for flags (last 209 items)
 const randomEmoji = function (obj) {
   var keys = Object.keys(obj)
-  return (obj[keys[keys.length * Math.random() << 0]])['char'];
+  return (obj[keys[(keys.length - 209) * Math.random() << 0]])['char'];
 }
 
 let challengeList = [ 'Ruby', 'JavaScript', 'Node', 'GO', 'Python', 'React', 'Vue.js', 'Hardware', 'Stylus', 'Offline-first', 'CSS Modules', 'Hapi', 'an API' ];
@@ -42,7 +43,7 @@ export default {
 
 <style scoped lang="scss">
   .randomized-list {
-    font-size: 2em;
+    font-size: 3em;
     list-style: none;
   }
 
@@ -52,5 +53,10 @@ export default {
 
   .challenge-item {
     background: yellow;
+  }
+
+  small {
+    font-size: 70%;
+    vertical-align: middle;
   }
 </style>
