@@ -1,7 +1,7 @@
 {
   "name": "randomhack",
   "version": "1.0.0",
-  "description": "ideas for RandomHack weekends",
+  "description": "Idea generator for RandomHack weekends",
   "author": "Una Kravets <una.kravets@gmail.com>",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "fs": "0.0.1-security",
     "sentencer": "^0.1.5",
     "vue": "^2.1.0"
   },
@@ -24,12 +25,12 @@
     "babel-register": "^6.0.0",
     "chalk": "^1.1.3",
     "connect-history-api-fallback": "^1.1.0",
-    "css-loader": "^0.26.1",
+    "css-loader": "^0.25.0",
     "eslint": "^3.7.1",
+    "eslint-config-standard": "^6.1.0",
     "eslint-friendly-formatter": "^2.0.5",
     "eslint-loader": "^1.5.0",
     "eslint-plugin-html": "^1.3.0",
-    "eslint-config-standard": "^6.1.0",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "eventsource-polyfill": "^0.9.6",
@@ -41,9 +42,11 @@
     "html-webpack-plugin": "^2.8.1",
     "http-proxy-middleware": "^0.17.2",
     "json-loader": "^0.5.4",
-    "semver": "^5.3.0",
+    "node-sass": "^4.1.1",
     "opn": "^4.0.2",
-    "ora": "^0.4.0",
+    "ora": "^0.3.0",
+    "sass-loader": "^4.1.1",
+    "semver": "^5.3.0",
     "shelljs": "^0.7.4",
     "url-loader": "^0.5.7",
     "vue-loader": "^10.0.0",
@@ -52,7 +55,7 @@
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2",
-    "webpack-merge": "^2.0.0"
+    "webpack-merge": "^0.14.1"
   },
   "engines": {
     "node": ">= 4.0.0",

@@ -1,6 +1,6 @@
 # randomhack
 
-> ideas for RandomHack weekends
+> Idea generator for RandomHack weekends
 
 ## Build Setup
 
